@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/config/site";
+import ChatBot from '@/components/ChatBot';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -77,6 +78,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <ChatBot />
         </ThemeProvider>
       </body>
     </html>
